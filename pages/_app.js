@@ -1,6 +1,12 @@
-import '../styles/globals.css'
+import '../styles/app.scss'
+import {useEffect} from "react"
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap') : null
+  }, [])
+
   return <Component {...pageProps} />
 }
 
