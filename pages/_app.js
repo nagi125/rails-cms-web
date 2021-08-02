@@ -1,4 +1,4 @@
-import '../styles/app.scss'
+import '../src/assets/sass/app.scss'
 import {useEffect} from "react"
 
 function MyApp({ Component, pageProps }) {
